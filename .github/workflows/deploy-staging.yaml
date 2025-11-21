@@ -2,9 +2,8 @@ name: Publish to staging
 
 on:
   push:
-    branches:
-      - "**" # matches every branch
-      - "!master" # excludes master
+    branches-ignore:
+      - master
 
 jobs:
   publish:
